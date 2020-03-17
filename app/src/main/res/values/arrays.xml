@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="range_arrays">
+        <item>500m</item>
+        <item>1km</item>
+        <item>2km</item>
+        <item>3km</item>
+        <item>5km</item>
+    </string-array>
+
+    <string-array name="smart_widget_options">
+        <item>@string/priority_case1</item>
+        <item>@string/priority_case2</item>
+        <item>@string/priority_case3</item>
+    </string-array>
+</resources>

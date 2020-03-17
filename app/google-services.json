@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "546388172762",
+    "firebase_url": "https://maskeyes-8f8fa.firebaseio.com",
+    "project_id": "maskeyes-8f8fa",
+    "storage_bucket": "maskeyes-8f8fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546388172762:android:60790507021e921c612ae3",
+        "android_client_info": {
+          "package_name": "co.giftree.maskeyes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546388172762-lrcc306lb44to4ire9l06177uhbsngov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHGtwNQto3LVlVpdxL-DqGHHd6SfCRXpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546388172762-lrcc306lb44to4ire9l06177uhbsngov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-6930055600634279~8400872964"
+    }
+  ],
+  "configuration_version": "1"
+}

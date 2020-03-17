@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#007ee6</color>
+    <color name="colorPrimaryDark">#0061B3</color>
+    <color name="colorAccent">#007ee6</color>
+
+    <color name="basicColor">#007ee6</color>
+
+    <color name="black">#000</color>
+    <color name="white">#FFF</color>
+    <color name="gray_dark">#858585</color>
+    <color name="actionbar_button_default">#24ffffff</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="remote_control_bg">#f7f7f7</color>
+
+    <color name="ble_on">#42EB84</color>
+    <color name="link">#007ee6</color>
+    <color name="bright_gray">#efefef</color>
+
+    <color name="gray">#ddd</color>
+    <color name="clear_gray">#b9b9b9</color>
+    <color name="default_icon">#aeaeae</color>
+
+    <color name="darker_gray">#838383</color>
+    <color name="ble_weak">#ebd442</color>
+    <color name="valet_emphasis">#0099FF</color>
+    <color name="ble_off">#eb4242</color>
+    <color name="main_border">#ff9d00</color>
+
+    <color name="blueAccent">#b30d22af</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="white_trans">#90ffffff</color>
+
+
+
+    <color name="stat_plenty">#47A34B</color>
+    <color name="stat_some">#FF8707</color>
+    <color name="stat_few">#F44336</color>
+    <color name="stat_empty">#929292</color>
+
+    <color name="stat_unknown">#424242</color>
+</resources>

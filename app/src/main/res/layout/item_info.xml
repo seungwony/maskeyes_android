@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/view_spacing"
+        android:layout_marginStart="@dimen/view_spacing"
+        android:layout_marginEnd="@dimen/view_spacing"
+        android:background="?attr/selectableItemBackground"
+
+        android:id="@+id/root_view"
+        android:layout_marginBottom="@dimen/view_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="@dimen/view_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_centerVertical="true"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RelativeLayout
+                    android:layout_marginEnd="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/type_icon"
+
+
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_type01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/name_txt"
+                        android:layout_toEndOf="@id/type_icon"
+                        android:text="00약국"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_margin="@dimen/view_spacing"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/gray"
+                    android:layout_marginEnd="60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+                <LinearLayout
+
+                    android:layout_margin="@dimen/view_spacing"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/remain_stat_txt"
+
+                        android:text="재고없음"
+                        android:textColor="@color/colorPrimary"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/distance_txt"
+
+                        android:layout_marginStart="@dimen/view_margin_spacing"
+                        android:text="거리"
+                        android:textColor="@color/colorPrimary"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:background="@color/gray"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+
+                <RelativeLayout
+                    android:id="@+id/address_view"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/view_margin_spacing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_location_on"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/address_txt"
+
+                        android:layout_marginStart="35dp"
+                        android:layout_centerVertical="true"
+                        android:text="대구광역시 동대구로 471 "
+                        android:ellipsize="end"
+
+                        android:layout_marginEnd="35dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_content_copy"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <TextView
+
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/stock_at_txt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/view_spacing"
+                    android:text="입고시간"
+                    android:textSize="10sp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_marginEnd="@dimen/view_spacing"
+                android:id="@+id/move_to_map_btn"
+
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/view_spacing"
+                android:src="@drawable/ic_map"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

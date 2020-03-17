@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">마스크 아이즈</string>
+    <string name="SEARCH">찾기</string>
+    <string name="Priority">위젯 우선순위</string>
+    <string name="copied_to_clipboard">클립보드에 저장했습니다.</string>
+    <string name="distance_format">거리 : %s</string>
+    <string name="empty">재고없음</string>
+    <string name="fri">금요일</string>
+    <string name="mask_stat_format">마스크 : %s</string>
+    <string name="mon">월요일</string>
+    <string name="priority_case1">재고 있음 > 가까운 순 (자료없음은 재고 없는 것으로 간주함)</string>
+    <string name="priority_case2">재고 있음 > 가까운 순 (자료없음은 재고 있는 것으로 간주함)</string>
+    <string name="priority_case3">가까운 순</string>
+    <string name="regulation">마스크 정책</string>
+    <string name="sat">토요일</string>
+    <string name="search_address">주소로 검색</string>
+    <string name="search_here">여기에서 재탐색</string>
+    <string name="settings">설 정</string>
+    <string name="smart_widget">스마트 위젯</string>
+    <string name="smart_widget_des">가까운 위치에 재고 있는 판매처 우선 순위로 위젯에 보여줍니다. (비활성화시 재고 여부 상관 없이 가까운순)</string>
+    <string name="stock_at_format">입고시간 : %s</string>
+
+    <string name="stock_at">입고시간 :</string>
+    <string name="last_format_target"> 대상</string>
+    <string name="non_purchaser">주간 미구매자</string>
+    <string name="mask_stat">마스크 :</string>
+    <string name="sun">토요일</string>
+    <string name="thur">목요일</string>
+    <string name="tue">화요일</string>
+    <string name="unknown">자료없음</string>
+    <string name="wed">수요일</string>
+    <string name="address">주소</string>
+    <string name="contact">문의하기</string>
+    <string name="help">도움말</string>
+
+    <string name="regulation_people_born_format">출생연도 끝자리 %s, %s</string>
+    <string name="more_press_back">한 번 더 뒤로가기 하면 종료됩니다.</string>
+    <string name="loading">로딩중..</string>
+    <string name="marker_helper">마커 도움말</string>
+    <string name="list_view">판매처 리스트</string>
+    <string name="navermap">네이버지도</string>
+    <string name="kakaomap">카카오지도</string>
+    <string name="googlemap">구글지도</string>
+    <string name="hide_empty">품절 숨김</string>
+    <string name="input_address">주소 입력</string>
+    <string name="not_found_any_store">발견된\n장소가\n없습니다.</string>
+    <string name="confirm">확 인</string>
+    <string name="contact_title">[마스크아이즈] 문의사항</string>
+    <string name="range_of_radius">반경 범위</string>
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:padding="@dimen/view_spacing"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/type_icon_img"
+            android:src="@drawable/ic_type01"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_toRightOf="@id/type_icon_img"
+            android:text=""
+            android:id="@+id/name_txt"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/view_spacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="30dp"
+            android:src="@drawable/ic_close"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentEnd="true"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/gray"
+        android:layout_marginStart="@dimen/view_spacing"
+        android:layout_marginEnd="@dimen/view_spacing"
+        android:layout_marginBottom="@dimen/view_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+
+    <LinearLayout
+        android:paddingStart="@dimen/view_margin_spacing"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/mask_stat"
+            android:id="@+id/remain_stat_title_txt"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/remain_stat_txt"
+            android:layout_marginStart="@dimen/view_spacing"
+            android:text="재고없음"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/distance_txt"
+            android:layout_marginStart="@dimen/view_spacing"
+            android:text="거리 : 0km"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/view_spacing"
+        android:paddingStart="@dimen/view_margin_spacing"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/stock_at"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/view_spacing"
+            android:text=""
+            android:id="@+id/stock_at_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/address_view"
+        android:padding="@dimen/view_spacing"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="@dimen/view_spacing"
+            android:layout_centerVertical="true"
+            android:id="@+id/location_icon"
+            android:src="@drawable/ic_location_on"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/address_txt"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/location_icon"
+            android:layout_marginEnd="50dp"
+            android:text="대구광역시 동대구로 471"
+            android:layout_marginStart="@dimen/view_spacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_content_copy"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingStart="@dimen/view_spacing"
+        android:paddingEnd="@dimen/view_spacing"
+        android:layout_marginBottom="@dimen/view_spacing"
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/navermap_btn"
+            android:text="@string/navermap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <View
+            android:background="@color/gray"
+            android:layout_marginStart="@dimen/view_spacing"
+            android:layout_marginEnd="@dimen/view_spacing"
+
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <Button
+            android:gravity="start|center_vertical"
+            android:drawablePadding="@dimen/view_spacing"
+            android:id="@+id/kakaomap_btn"
+            android:text="@string/kakaomap"
+            android:drawableStart="@drawable/ic_kakaomap"
+            android:paddingStart="@dimen/view_spacing"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <View
+            android:background="@color/gray"
+            android:layout_marginStart="@dimen/view_spacing"
+            android:layout_marginEnd="@dimen/view_spacing"
+
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <Button
+            android:gravity="start|center_vertical"
+            android:drawablePadding="@dimen/view_spacing"
+            android:id="@+id/googlemap_btn"
+            android:text="@string/googlemap"
+            android:paddingStart="@dimen/view_spacing"
+            android:drawableStart="@drawable/ic_googlemaps"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.giftree.maskeyes">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppThemeNoActionBar">
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="@string/NAVER_CLIENT_ID" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:name=".MainV2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".DetailActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".NoticeActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ListActivity"/>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SearchAddressActivity"/>
+
+        <receiver
+            android:exported="true"
+            android:name=".widget.WidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider"
+                />
+
+        </receiver>
+        <service
+            android:name=".firebase.MyFirebaseMsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.GpsTracker"/>
+    </application>
+
+</manifest>
