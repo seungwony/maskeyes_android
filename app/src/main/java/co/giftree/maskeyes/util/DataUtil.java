@@ -37,7 +37,6 @@ public class DataUtil {
             return ContextCompat.getColor(context, R.color.stat_empty);
         }
         return ContextCompat.getColor(context, R.color.stat_unknown);
-
     }
 
     public static boolean isSoldOut(final String stat){

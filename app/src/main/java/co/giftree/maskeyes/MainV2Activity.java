@@ -192,8 +192,6 @@ public class MainV2Activity extends AppCompatActivity implements View.OnClickLis
 
 
 
-
-
         mDrawMarkerList = new LinkedList<>();
         mClearMarkerList = new LinkedList<>();
 

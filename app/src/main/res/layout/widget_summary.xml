@@ -126,8 +126,9 @@
 
 
         <LinearLayout
+            android:id="@+id/store1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/view_spacing"
             android:layout_weight="1"
             android:gravity="center"
@@ -166,8 +167,9 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/store2"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/view_spacing"
             android:layout_weight="1"
             android:gravity="center"
@@ -205,8 +207,9 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/store3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/view_spacing"
             android:layout_weight="1"
             android:gravity="center"

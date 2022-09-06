@@ -43,6 +43,9 @@ public class WidgetProvider extends AppWidgetProvider {
 
     private static final String TAG = WidgetProvider.class.getSimpleName();
     private static final String ACTION_APP_LAUNCH = "ACTION_APP_LAUNCH";
+    private static final String ACTION_STORE1 = "ACTION_STORE1";
+    private static final String ACTION_STORE2 = "ACTION_STORE2";
+    private static final String ACTION_STORE3 = "ACTION_STORE3";
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -55,9 +58,45 @@ public class WidgetProvider extends AppWidgetProvider {
             PackageManager manager = context.getPackageManager();
 
             Intent i = manager.getLaunchIntentForPackage(context.getPackageName());
+
 //                    i.addCategory(Intent.CATEGORY_LAUNCHER);
             context.startActivity(i);
 
+        }else if(ACTION_STORE1.equals(intent.getAction())){
+            PackageManager manager = context.getPackageManager();
+
+            Intent i = manager.getLaunchIntentForPackage(context.getPackageName());
+
+            try{
+                i.putExtra("store1", "store1");
+            }catch (NullPointerException ex){
+                Log.e(TAG, ex.toString());
+            }
+
+//                    i.addCategory(Intent.CATEGORY_LAUNCHER);
+            context.startActivity(i);
+        }else if(ACTION_STORE2.equals(intent.getAction())){
+            PackageManager manager = context.getPackageManager();
+
+            Intent i = manager.getLaunchIntentForPackage(context.getPackageName());
+            try{
+                i.putExtra("store2", "store2");
+            }catch (NullPointerException ex){
+                Log.e(TAG, ex.toString());
+            }
+//                    i.addCategory(Intent.CATEGORY_LAUNCHER);
+            context.startActivity(i);
+        }else if(ACTION_STORE3.equals(intent.getAction())){
+            PackageManager manager = context.getPackageManager();
+
+            Intent i = manager.getLaunchIntentForPackage(context.getPackageName());
+            try{
+                i.putExtra("store3", "store3");
+            }catch (NullPointerException ex){
+                Log.e(TAG, ex.toString());
+            }
+//                    i.addCategory(Intent.CATEGORY_LAUNCHER);
+            context.startActivity(i);
         }
     }
 
@@ -121,6 +160,7 @@ public class WidgetProvider extends AppWidgetProvider {
         // And this time we are sending a broadcast with getBroadcast
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent,
                 PendingIntent.FLAG_UPDATE_CURRENT);
+
         views.setOnClickPendingIntent(res, pendingIntent);
     }
 
@@ -269,6 +309,7 @@ public class WidgetProvider extends AppWidgetProvider {
                     }
 
 
+
                     if( temps.size() > 2 ) {
 
                         MaskInfo first = temps.get(0);
@@ -295,6 +336,9 @@ public class WidgetProvider extends AppWidgetProvider {
                         views.setTextViewText(R.id.name3_remain_cnt, DataUtil.convertReadableRemainStat(context, third.getRemain_stat()));
                         views.setTextColor(R.id.name3_remain_cnt, DataUtil.convertColorRemainStat(context, third.getRemain_stat()));
 
+                        intentAction(context, views, R.id.store1, ACTION_STORE1);
+                        intentAction(context, views, R.id.store2, ACTION_STORE2);
+                        intentAction(context, views, R.id.store3, ACTION_STORE3);
                     }else if( temps.size() == 2 ) {
 
                         MaskInfo first = temps.get(0);
@@ -315,7 +359,12 @@ public class WidgetProvider extends AppWidgetProvider {
                         views.setImageViewResource(R.id.type_icon3, 0);
                         views.setTextViewText(R.id.name3_txt, "");
                         views.setTextViewText(R.id.name3_remain_cnt, "");
+                        intentAction(context, views, R.id.store1, ACTION_STORE1);
+                        intentAction(context, views, R.id.store2, ACTION_STORE2);
+
+
                     }else if ( temps.size() == 1 ) {
+
                         MaskInfo first = temps.get(0);
                         views.setViewVisibility(R.id.addr_view, View.VISIBLE);
 
@@ -332,7 +381,11 @@ public class WidgetProvider extends AppWidgetProvider {
                         views.setImageViewResource(R.id.type_icon3, 0);
                         views.setTextViewText(R.id.name3_txt, "");
                         views.setTextViewText(R.id.name3_remain_cnt, "");
+                        intentAction(context, views, R.id.store1, ACTION_STORE1);
+
+
                     }else {
+
                         views.setViewVisibility(R.id.addr_view, View.VISIBLE);
                         views.setImageViewResource(R.id.type_icon, 0);
                         views.setTextViewText(R.id.name_txt, "");

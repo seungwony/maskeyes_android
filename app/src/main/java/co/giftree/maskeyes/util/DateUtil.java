@@ -31,8 +31,6 @@ public class DateUtil {
     public static String todayWeekDay(Context context){
         String[] weekDay = { context.getString(R.string.sun), context.getString(R.string.mon), context.getString(R.string.tue), context.getString(R.string.wed), context.getString(R.string.thur), context.getString(R.string.fri), context.getString(R.string.sat) };
 
-
-
         Calendar cal = Calendar.getInstance();
 
         int num = cal.get(Calendar.DAY_OF_WEEK)-1;

@@ -10,3 +10,4 @@ public interface ApiCommonService {
     @GET("/corona19-masks/v1/storesByGeo/json")
     Call<JsonElement> storesByGeo(@Query("lat") String lat, @Query("lng") String lng, @Query("m") String m);
 }
+
